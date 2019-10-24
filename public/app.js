@@ -49,9 +49,17 @@ let addButton = (str) => {
 
 }
 
-addButton('one')
-addButton('two')
-addButton('three')
+let numButton = getRndInteger(2,5);
+
+for (let i = 0; i < numButton; i++)
+{
+    addButton(i);
+}
+
+
+// addButton('one')
+// addButton('two')
+// addButton('three')
 
 setTimeout(() => { 
     if (won || lost) return 
